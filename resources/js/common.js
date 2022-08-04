@@ -27,7 +27,7 @@ $(function()
 			return;
 		}
 
-		let output = jsonToGo(input, "", !$('#inline').is(':checked'), false, $('#omitempty').is(':checked'));
+		let output = jsonToGo(input, "", !$('#inline').is(':checked'), false, $('#omitempty').is(':checked'), $('#bson').is(':checked'));
 
 		if (output.error)
 		{
@@ -101,7 +101,13 @@ $(function()
 	$('#omitempty').change(function()
 	{
 		doConversion();
-	});
+	}); 
+	$('#bson').change(function()
+	{
+		doConversion();
+	}); 
+	
+	
 
 	// Highlights the output for the user
 	$('#output').click(function()

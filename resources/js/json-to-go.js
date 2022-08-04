@@ -7,7 +7,7 @@
 	A simple utility to translate JSON into a Go type definition.
 */
 
-function jsonToGo(json, typename, flatten = true, example = false, allOmitempty = false)
+function jsonToGo(json, typename, flatten = true, example = false, allOmitempty = false, bson= true)
 {
 	let data;
 	let scope;
@@ -205,7 +205,10 @@ function jsonToGo(json, typename, flatten = true, example = false, allOmitempty 
 				}
 				// appender('" bson:"'+keyname+'"');
 				// appender('`\n');
-				append('" bson:"'+keyname)
+				if (bson)
+				{
+					append('" bson:"'+keyname)
+				}
 
 				appender('"`\n');
 			}
@@ -235,7 +238,11 @@ function jsonToGo(json, typename, flatten = true, example = false, allOmitempty 
 				{
 					append('" example:"'+scope[keys[i]])
 				}
-				append('" bson:"'+keyname)
+				if (bson)
+				{
+					append('" bson:"'+keyname)
+				}
+
 
 				//appender('" bson:"'+keyname+'"');
 				//appender('`\n');
