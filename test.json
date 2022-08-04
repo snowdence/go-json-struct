@@ -1,0 +1,14 @@
+{
+    "status": 200,
+    "message": "Thành công",
+    "success": true,
+    "data": {
+        "_id": "62eb20fc55dcea99683938fa",
+        "created_at": "2022-08-04T01:29:32.707015Z",
+        "updated_at": "2022-08-04T01:29:32.707016Z",
+        "shop_key": "7c18dde1a46746818086310f3779a342",
+        "secret_key": "02455a1580144c50aa138b6482e58e4e",
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJTdG9yZUlkIjoiOTYyMTI1IiwiVXNlck5hbWUiOiIiLCJTdG9yZVN0YXR1cyI6IjIiLCJTaG9wVHlwZSI6IjEiLCJTdG9yZUxldmVsIjoiMCIsImV4cCI6MTY1OTYwNTM3MiwiaXNzIjoiOTYyMTI1IiwiYXVkIjoiOTYyMTI1In0.ZeErZ3SWYImP5f0QxRUaClaq-CHzMP1uA7eYYMcp13M",
+        "expires": "2022-08-04T16:29:32.7376603+07:00"
+    }
+}
